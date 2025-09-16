@@ -8,5 +8,5 @@ RUN mvn clean install
 FROM eclipse-temurin:17-jdk
 COPY --from=build /target/your-build.jar demo.jar
 # ENV PORT=8080
-EXPOSE 8080
+EXPOSE 8085
 ENTRYPOINT ["java","-jar","demo.jar"]
